@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e8f0f2, #f4f4f4); /* Gradient background */
+    padding: 20px;
+    color: #333; /* Dark text color for better readability */
+}
+
+h1, h2 {
+    text-align: center; /* Center the headings */
+    color: #2c3e50; /* Darker shade for headings */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger font size for the main title */
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+h2 {
+    font-size: 1.8em; /* Slightly larger font for result */
+    margin-top: 20px; /* Spacing above result */
+}
+
+form {
+    background: #fff; /* White background for form */
+    padding: 30px; /* Increased padding for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    max-width: 400px; /* Fixed width for form */
+    margin: 0 auto; /* Center the form */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+form:hover {
+    transform: scale(1.02); /* Slightly enlarge the form on hover */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold; /* Bold labels */
+    font-size: 1.1em; /* Slightly larger font size for labels */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch targets */
+    margin-bottom: 15px; /* Increased margin for spacing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Inner shadow effect */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+    font-size: 1em; /* Consistent font size */
+}
+
+input:focus, select:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Green glow on focus */
+}
+
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text */
+    padding: 12px; /* Increased padding for button */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    width: 100%; /* Full width button */
+    font-size: 16px; /* Larger text */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}
+
+#result {
+    text-align: center; /* Center result text */
+    font-size: 2em; /* Larger font size for result */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #e74c3c; /* Red color for impact */
+}
+
+#location {
+    margin-top: 10px;
+    color: #555; /* Subtle color for location text */
+    text-align: center; /* Center the location text */
+    font-style: italic; /* Italic style for location */
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust result size for smaller screens */
+    }
+}
