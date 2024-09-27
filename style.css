@@ -1,6 +1,10 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #e8f0f2, #f4f4f4); /* Gradient background */
+    background-image: url(greenhouse-co2-climate.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 20px;
     color: #333; /* Dark text color for better readability */
 }
