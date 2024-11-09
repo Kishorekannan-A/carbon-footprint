@@ -14,7 +14,7 @@ function showPosition(position) {
 }
 
 function showError(error) {
-    switch(error.code) {
+    switch (error.code) {
         case error.PERMISSION_DENIED:
             document.getElementById("location").innerHTML = "User denied the request for Geolocation.";
             break;
@@ -34,7 +34,6 @@ function showError(error) {
 window.onload = getLocation;
 
 // Carbon footprint calculator
-// Carbon footprint calculator
 function calculateCarbonFootprint() {
     const energy = parseFloat(document.getElementById('energy').value) || 0;
     const transport = parseFloat(document.getElementById('transport').value) || 0;
@@ -51,6 +50,5 @@ function calculateCarbonFootprint() {
     const totalEmissions = energyEmissions + transportEmissions + wasteEmissions;
 
     // Redirect to the result page with the calculated carbon footprint in the query string
-    window.location.href = `result.html?carbonFootprint=${totalEmissions.toFixed(2)}`;
+    window.location.href = `results.html?carbonFootprint=${totalEmissions.toFixed(2)}`;
 }
-
