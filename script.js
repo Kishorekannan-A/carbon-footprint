@@ -34,6 +34,7 @@ function showError(error) {
 window.onload = getLocation;
 
 // Carbon footprint calculator
+// Carbon footprint calculator
 function calculateCarbonFootprint() {
     const energy = parseFloat(document.getElementById('energy').value) || 0;
     const transport = parseFloat(document.getElementById('transport').value) || 0;
@@ -49,5 +50,7 @@ function calculateCarbonFootprint() {
 
     const totalEmissions = energyEmissions + transportEmissions + wasteEmissions;
 
-    document.getElementById('result').textContent = totalEmissions.toFixed(2);
+    // Redirect to the result page with the calculated carbon footprint in the query string
+    window.location.href = `result.html?carbonFootprint=${totalEmissions.toFixed(2)}`;
 }
+
